@@ -3,6 +3,7 @@ import nltk
 #nltk.download('averaged_perceptron_tagger')
 #nltk.download('maxent_ne_chunker')
 #nltk.download('words')
+#nltk.download()
 
 
 from nltk import word_tokenize
