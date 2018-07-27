@@ -28,7 +28,7 @@ print(words)
 print("**************************************")
 # tag words, verbs, noun, etc 
 tagged = nltk.pos_tag(words)
-print(tagged)
+#print(tagged)
 print("**************************************")
 entities = nltk.chunk.ne_chunk(tagged)
 #print(entities)
@@ -41,7 +41,7 @@ for w in words:
     if w not in stopWords:
         wordsFiltered.append(w)
  
-print(wordsFiltered)
+#print(wordsFiltered)
 print("**************************************")
 
 '''
@@ -100,16 +100,16 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 
 
-sentences = ['Peter is happy and this is a happy day.',' However, the class was such a boring one.']  
+sentences = ['Peter is happy and this is a happy day.','However, the class was such a boring one.']  
 #sentences.extend(text)
-print "<----->" , sentences 
+#print "<----->" , sentences 
 sid = SentimentIntensityAnalyzer()
 for sentence in sentences:
 	print(sentence)
 	ss = sid.polarity_scores(sentence)
 	for k in sorted(ss):
-		print ('{0}: {1}, '.format(k, ss[k]) )   
-		print ("-----") 
+		print('{0}: {1}, '.format(k, ss[k]) )   
+		#print ("-----") 
 
 
 
