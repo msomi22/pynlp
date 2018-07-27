@@ -2,3 +2,5 @@
 
 1. https://pythonspot.com/category/nltk/
 
+2. http://www.nltk.org/howto/sentiment.html
+
