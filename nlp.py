@@ -81,3 +81,37 @@ for word in words:
  
 print('Positive: ' + str(float(pos)/len(words)))
 print('Negative: ' + str(float(neg)/len(words)))
+
+
+print("**************************************")
+print("**************************************")
+'''
+from nltk.corpus import treebank
+#nltk.download('treebank')
+t = treebank.parsed_sents('wsj_0001.mrg')[0]
+t.draw()
+'''
+
+from nltk.classify import NaiveBayesClassifier
+from nltk.corpus import subjectivity
+from nltk.sentiment import SentimentAnalyzer
+from nltk.sentiment.util import *
+from nltk.sentiment.vader import SentimentIntensityAnalyzer 
+
+
+
+sentences = ['Peter is happy and this is a happy day.',' However, the class was such a boring one.']  
+#sentences.extend(text)
+print "<----->" , sentences 
+sid = SentimentIntensityAnalyzer()
+for sentence in sentences:
+	print(sentence)
+	ss = sid.polarity_scores(sentence)
+	for k in sorted(ss):
+		print ('{0}: {1}, '.format(k, ss[k]) )   
+		print ("-----") 
+
+
+
+print("**************************************")
+
