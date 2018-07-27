@@ -4,4 +4,8 @@
 * pip install nltk
 * To read more on nlp, see this https://pythonspot.com/category/nltk/ 
 
+* See sample io 
+
+![alt text](https://github.com/msomi22/pynlp/blob/master/nlp_output.png)  
+
 
