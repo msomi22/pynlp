@@ -1,0 +1,10 @@
+
+
+wrap_content
+sp - scale independent pixels
+dp - density independent pixels
+
+Material design
+
+Linear vs Relative Layouts
+image-centerCrop

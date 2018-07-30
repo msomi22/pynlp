@@ -1,0 +1,130 @@
+
+*ESB*
+Service Oriented Archtecture(SOA)
+-exchage data via xml
+-one interface for connecting several services
+-esb is thus needed
+-esb; routing info(queuing),carrier of message,data transformation,security, esb can become a single point of failure
+-federated ebs(solve the above problem, scalable)
+********************
+-
+
+
+
+
+*ETL*
+-extract transform, load
+-gather data from unlimited number of sources, organize it together and centralize it ito a single repository
+ETL tools; oracle data integrator, microsoft SSIS,IBM InfoSphere, Oracle Warehouse Builder,SAP data Services,SAS data management,
+
+
+*SOA*
+-service provider  ---- service consumer
+-service; well defined function that doesnt depend on the state of other services.
+-solution for making two s/w communcate to each other
+-web service,SOAP,WSDL,XML
+-complex system;heterogenous,unbounded,dynamic,undefined
+-interoperability,loose coupling & distributed
+-abstraction
+-
+
+*Microservice arcitecture*
+-break down large silo apps into more manageable fully decoupled pieces
+-decouped components within an app
+-
+
+
+*Kafka*
+
+
+*Akka*
+
+*CRM/ERP*
+
+
+
+
+#Monolithic;single unit
+#SOA;Coarse-grained
+#Microservices;Fine-grained
+
+** Risks*****
+- estimation and scedulling
+- scope creap
+- employee turnover
+- productivity issues
+- goold plating - show off
+
+Mitigate for costoverrun
+1.good project planning
+2.stay within the scope
+3.prioritize
+4.proper scheduling
+5.stakeholders stay informed
+6.track and measure progress
+
+
+
+# Requirement Document
+-info about sys functionalities
+it contains; business rules, user stories, use cases etc
+** SRS- sw requirement specificatios
+- contain also; scope,terms, references, goals,
+
+
+*MongoDb vs Cassandra*
+#Mongo
+-use json like documents
+-use indexes, this can be slow
+-db.customer.find()
+-db.customer.insert({id:'1',name:'Peter'})
+-db.customer.update({id:{$val:1}},{$set:{name:'Mwenda'}},{multi:true})
+--** C++ based
+-scalability and caching for real-time analytics
+-iot,mobile,cms
+-everything stored in document
+-replication builtin but need to set it up
+-unstracured/structured data without clear definition of data structure
+
+#Cassandra
+-handle massive amount of unstructured data
+-scale rapidly with inimal admin work
+-uses CQL that is similar to SQL
+-query usinsing primary key
+-SELECT * FROM customer
+-INSERT INTO customer(id,name) VALUES(1,'Peter')
+-UPDATE customer SET name = 'Mwenda' WHERE id = 1
+--** java based
+- scale while being reliable
+-iot,streaming data
+-flexibe wide column
+-easy bultin replication
+-unstracured/structured data with rapid growth in database
+
+
+
+
+****** Ruby on Rails ***
+-Extremely productive web application framework written in Ruby
+
+*Ruby
+-uses ruby
+-ruby is the base of rails
+-intreplated like perl and python
+-orinated in Japan
+
+*Rails
+-An extremely productive web-application framework.
+-You could develop a web application at least ten times faster with Rails than you could with a typical Java framework.
+-
+
+
+**** LINUX
+   1. ruby --version
+   2. sudo apt install ruby-railties
+   3. rails -v 
+   4. irb (on terminal) 
+   5. sudo apt install ruby-bundler
+   6. bundle install
+
+
