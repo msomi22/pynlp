@@ -1,0 +1,22 @@
+
+
+1. download kafka for python
+
+2. start zookeper
+   - bin/zookeeper-server-start.sh config/zookeeper.properties
+   
+3. start server 
+   - bin/kafka-server-start.sh config/server.properties
+
+4. run a default consumer 
+   - bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning    
+   - here you will be able to receive messages  
+
+6. to run custom made consumer, find it in the code... see also a sample producer
+   
+
+7. to run a default producer, 
+   - bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test      
+   - here you will be able to send messages
+
+   
