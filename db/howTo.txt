@@ -1,0 +1,30 @@
+
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-cassandra-and-run-a-single-node-cluster-on-ubuntu-14-04
+
+
+
+https://tutorialforlinux.com/2017/02/18/how-to-install-apache-cassandra-on-linux-mint-18-1-serena-easy-guide/
+
+
+cqlsh
+
+
+
+https://www.linuxhelp.com/how-to-install-apache-cassandra-on-linux-mint-18-3/
+
+
+************************************************
+********* for mint 18.3
+***********************************************
+
+
+1. echo "deb http://www.apache.org/dist/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list
+2. curl https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add -
+3. sudo apt-get update 
+4. sudo apt-get install cassandra
+
+
+
+

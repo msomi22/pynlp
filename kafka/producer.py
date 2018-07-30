@@ -17,6 +17,4 @@ except KafkaError:
     pass
 
 # Successful result returns assigned partition and offset
-print (record_metadata.topic)
-print (record_metadata.partition)
-print (record_metadata.offset)
+print 'topic: ',record_metadata.topic, ' , partition:' ,record_metadata.partition, ' , offset: ', record_metadata.offset

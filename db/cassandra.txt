@@ -1,0 +1,31 @@
+
+
+1. Keyspace
+  - Is similar to a database in a RDBMS. 
+  - A keyspace is what holds data objects and is the level where you specify options for a data partitioning and replication strategy.
+  - cqlsh 
+  - create keyspace nlpdb with replication = {'class':'SimpleStrategy','replication_factor':1};
+  -  you need to use the USE command to tell Cassandra which keyspace you want to work with.
+
+2. Data Objects
+   - stores data
+   - because Cassandra is based on Google Bigtable, you’ll use column families / tables to store data.
+   - Column families are similar to RDBMS tables, but are much more flexible and dynamic. 
+   - Column families have rows like RDBMS tables, but they are a sparse column type of object, meaning that rows in a column family can have different columns depending on the data you want to store for a particular row.
+   - Let’s create a base column family to hold our data:
+   - cqlsh> use nlpdb;
+
+   - create table rawdata (data_id int primary key, topic varchar, message varchar, type varchar, score varchar);  
+
+   - insert into rawdata (data_id, topic, message, type, score) values (1,'#LifeAtADC','peter:adc is not a very bad place to be, but salary is fucking little','neg:46,pos:0,net:56'); 
+
+   - select * from rawdata;
+
+  
+  ****************************************
+  1. cqlsh
+  2. create keyspace nlpdb with replication = {'class':'SimpleStrategy','replication_factor':1};
+  3. use nlpdb;
+  4. create table rawdata (data_id int primary key, topic varchar, message varchar, type varchar, score varchar); 
+  5. insert into rawdata (data_id, topic, message, type, score) values (1,'#LifeAtADC','peter:adc is not a very bad place to be, but salary is fucking little','neg:46,pos:0,net:56');
+  6. select * from rawdata;
