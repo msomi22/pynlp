@@ -5,7 +5,7 @@
 from nltk.sentiment.vader import SentimentIntensityAnalyzer 
 
 sentences = ['Peter is happy and this is a happy day.','However, the class was such a boring one.'] 
-sentences = ['The trip was such a boring one, i dont think i would attend another.','That food was not bad.']  
+#sentences = ['The trip was such a boring one, i dont think i would attend another.','That food was not bad.']  
 
 sid = SentimentIntensityAnalyzer()
 for sentence in sentences:
